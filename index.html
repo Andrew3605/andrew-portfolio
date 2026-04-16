@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Putrannesda | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fog overlay -->
+    <div class="fog-container">
+        <div class="fog fog-1"></div>
+        <div class="fog fog-2"></div>
+    </div>
+
+    <!-- Ember particles canvas -->
+    <canvas id="ember-canvas"></canvas>
+
+    <!-- Navigation - Souls menu style -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">A<span class="logo-dot">.</span>P</a>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about" data-text="About">About</a></li>
+                <li><a href="#skills" data-text="Attributes">Attributes</a></li>
+                <li><a href="#projects" data-text="Inventory">Inventory</a></li>
+                <li><a href="#education" data-text="Lore">Lore</a></li>
+                <li><a href="#experience" data-text="Journey">Journey</a></li>
+                <li><a href="#contact" data-text="Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero - Bonfire -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="bonfire">
+                <div class="bonfire-flame">
+                    <div class="flame flame-1"></div>
+                    <div class="flame flame-2"></div>
+                    <div class="flame flame-3"></div>
+                    <div class="flame flame-4"></div>
+                    <div class="flame flame-5"></div>
+                </div>
+                <div class="bonfire-glow"></div>
+                <div class="bonfire-base">
+                    <svg viewBox="0 0 120 40" width="120" height="40">
+                        <path d="M20,35 L35,10 L40,25 L50,5 L55,20 L60,8 L65,22 L70,5 L80,25 L85,10 L100,35" fill="none" stroke="#5a4a3a" stroke-width="3" stroke-linecap="round"/>
+                        <ellipse cx="60" cy="37" rx="45" ry="4" fill="#3a2a1a"/>
+                    </svg>
+                </div>
+            </div>
+            <h1 class="hero-name">Andrew Putrannesda</h1>
+            <div class="hero-divider">
+                <span class="divider-line"></span>
+                <span class="divider-diamond"></span>
+                <span class="divider-line"></span>
+            </div>
+            <p class="hero-title">Junior Developer &amp; IT Professional</p>
+            <p class="hero-subtitle">Bachelor of Information Technology student with hands-on experience in .NET, C#, JavaScript, and full-stack web development. I build real-world applications and keep learning with every project.</p>
+            <div class="hero-prompt">
+                <span class="prompt-icon">&#9656;</span>
+                <a href="#projects" class="prompt-text">Rest at the bonfire and view my work</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">About Me</span>
+            </h2>
+            <div class="about-content souls-panel">
+                <p>A motivated IT professional currently completing a Bachelor of Information Technology at Auckland Institute of Studies (expected May 2026). Armed with two IT diplomas and hands-on experience in web development and software projects, bringing both academic knowledge and practical skills to every quest.</p>
+                <p>Currently sharpening web development skills through The Odin Project while contributing to real-world C# applications for student assessment management. Over 5 years in fast-paced hospitality roles have forged strong customer service, teamwork, and problem-solving abilities.</p>
+                <p>Always eager to take on new challenges and continue growing as a developer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills / Attributes -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">Attributes</span>
+            </h2>
+            <div class="stats-grid">
+                <div class="stat-category">
+                    <h3 class="stat-category-title">
+                        <span class="stat-icon">&#9876;</span>
+                        Web Development
+                    </h3>
+                    <div class="stat-bars">
+                        <div class="stat-row" data-level="75">
+                            <span class="stat-name">HTML / CSS</span>
+                            <div class="stat-bar"><div class="stat-fill" style="--fill: 75%"></div></div>
+                        </div>
+                        <div class="stat-row" data-level="60">
+                            <span class="stat-name">JavaScript</span>
+                            <div class="stat-bar"><div class="stat-fill" style="--fill: 60%"></div></div>
+                        </div>
+                        <div class="stat-row" data-level="70">
+                            <span class="stat-name">Git / GitHub</span>
+                            <div class="stat-bar"><div class="stat-fill" style="--fill: 70%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-category">
+                    <h3 class="stat-category-title">
+                        <span class="stat-icon">&#128737;</span>
+                        Programming
+                    </h3>
+                    <div class="stat-bars">
+                        <div class="stat-row" data-level="80">
+                            <span class="stat-name">C# / .NET 8</span>
+                            <div class="stat-bar"><div class="stat-fill" style="--fill: 80%"></div></div>
+                        </div>
+                        <div class="stat-row" data-level="70">
+                            <span class="stat-name">ASP.NET Core MVC</span>
+                            <div class="stat-bar"><div class="stat-fill" style="--fill: 70%"></div></div>
+                        </div>
+                        <div class="stat-row" data-level="65">
+                            <span class="stat-name">SQL / EF Core</span>
+                            <div class="stat-bar"><div class="stat-fill" style="--fill: 65%"></div></div>
+                        </div>
+                        <div class="stat-row" data-level="55">
+                            <span class="stat-name">Kotlin (Android)</span>
+                            <div class="stat-bar"><div class="stat-fill" style="--fill: 55%"></div></div>
+                        </div>
+                        <div class="stat-row" data-level="60">
+                            <span class="stat-name">SignalR</span>
+                            <div class="stat-bar"><div class="stat-fill" style="--fill: 60%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-category">
+                    <h3 class="stat-category-title">
+                        <span class="stat-icon">&#9881;</span>
+                        Tools &amp; Platforms
+                    </h3>
+                    <div class="stat-bars">
+                        <div class="stat-row" data-level="75">
+                            <span class="stat-name">Visual Studio / VS Code</span>
+                            <div class="stat-bar"><div class="stat-fill" style="--fill: 75%"></div></div>
+                        </div>
+                        <div class="stat-row" data-level="60">
+                            <span class="stat-name">Docker</span>
+                            <div class="stat-bar"><div class="stat-fill" style="--fill: 60%"></div></div>
+                        </div>
+                        <div class="stat-row" data-level="65">
+                            <span class="stat-name">GitHub Actions (CI/CD)</span>
+                            <div class="stat-bar"><div class="stat-fill" style="--fill: 65%"></div></div>
+                        </div>
+                        <div class="stat-row" data-level="55">
+                            <span class="stat-name">Linux (Ubuntu)</span>
+                            <div class="stat-bar"><div class="stat-fill" style="--fill: 55%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects / Inventory -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">Inventory</span>
+            </h2>
+            <div class="projects-grid">
+
+                <div class="item-card" data-rarity="legendary">
+                    <div class="item-rarity">Legendary</div>
+                    <div class="item-header">
+                        <h3>WebHotel</h3>
+                        <a href="https://github.com/Andrew3605/WebHotel" target="_blank" rel="noopener noreferrer" class="item-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                    <p class="item-subtitle">Hotel Booking Web App</p>
+                    <div class="item-stats">
+                        <span>.NET 8</span><span>ASP.NET Core MVC</span><span>C#</span><span>EF Core</span><span>SQL Server</span><span>SignalR</span><span>Docker</span><span>xUnit</span>
+                    </div>
+                    <p class="item-lore">Full-stack hotel booking system with three-tier role-based access (Admin, Staff, Customer). Features real-time live chat with SignalR, five-type customer request approval workflow, admin analytics dashboard with Chart.js, REST API with Swagger docs, Docker containerisation, and 39 automated tests with GitHub Actions CI/CD.</p>
+                    <div class="item-footer">
+                        <span class="item-detail">&#9733; Pluggable IChatBotService interface ready for AI integration</span>
+                    </div>
+                </div>
+
+                <div class="item-card" data-rarity="epic">
+                    <div class="item-rarity">Epic</div>
+                    <div class="item-header">
+                        <h3>AIS Learning Outcome System</h3>
+                    </div>
+                    <p class="item-subtitle">Academic Reporting System</p>
+                    <div class="item-stats">
+                        <span>.NET 8</span><span>ASP.NET Core MVC</span><span>SQL Server</span><span>EF Core</span><span>ASP.NET Identity</span>
+                    </div>
+                    <p class="item-lore">Web-based academic reporting system for rubric-based marking, learning outcome mapping, weighted score calculation, and PDF report generation. Contributed to the design and development of workflows for role-based use by Admin, Lecturer, and Moderator users.</p>
+                    <div class="item-footer">
+                        <span class="item-detail">&#9733; Built with Open XML SDK &amp; iTextSharp</span>
+                    </div>
+                </div>
+
+                <div class="item-card" data-rarity="rare">
+                    <div class="item-rarity">Rare</div>
+                    <div class="item-header">
+                        <h3>AIS Library</h3>
+                        <a href="https://github.com/Andrew3605/AisLibrary" target="_blank" rel="noopener noreferrer" class="item-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                    <p class="item-subtitle">Android App</p>
+                    <div class="item-stats">
+                        <span>Kotlin</span><span>Android Studio</span><span>ViewBinding</span><span>Navigation</span><span>RecyclerView</span><span>Coroutines</span>
+                    </div>
+                    <p class="item-lore">Multi-screen Android library app featuring book browsing, keyword search, category filtering, book detail views, e-book reader, audiobook player, and rental management. Built with Kotlin using fragments, ViewBinding, Navigation Component, and coroutines.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education / Lore -->
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">Lore</span>
+            </h2>
+            <div class="lore-timeline">
+                <div class="lore-item">
+                    <div class="lore-marker"></div>
+                    <div class="lore-content souls-panel">
+                        <span class="lore-date">Expected May 2026</span>
+                        <h3>Bachelor of Information Technology</h3>
+                        <p class="lore-place">Auckland Institute of Studies</p>
+                        <p class="lore-note">In Progress</p>
+                    </div>
+                </div>
+                <div class="lore-item">
+                    <div class="lore-marker"></div>
+                    <div class="lore-content souls-panel">
+                        <span class="lore-date">September 2022</span>
+                        <h3>Diploma in Systems Administration (Level 6)</h3>
+                        <p class="lore-place">Aspire2 International, Auckland</p>
+                    </div>
+                </div>
+                <div class="lore-item">
+                    <div class="lore-marker"></div>
+                    <div class="lore-content souls-panel">
+                        <span class="lore-date">July 2021</span>
+                        <h3>Diploma in IT Technical Support (Level 5)</h3>
+                        <p class="lore-place">Aspire2 International, Auckland</p>
+                        <p class="lore-note">Faculty of IT Scholarship Recipient</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Journey -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">Journey</span>
+            </h2>
+            <div class="lore-timeline">
+                <div class="lore-item">
+                    <div class="lore-marker"></div>
+                    <div class="lore-content souls-panel">
+                        <span class="lore-date">June 2023 - Present</span>
+                        <h3>Team Member</h3>
+                        <p class="lore-place">St. Pierre's Sushi, Auckland</p>
+                        <p>Provide fast and friendly customer service, handling orders and payments with accuracy. Support kitchen preparation and front counter operations. Manage multiple tasks in a high-pressure environment while maintaining quality.</p>
+                    </div>
+                </div>
+                <div class="lore-item">
+                    <div class="lore-marker"></div>
+                    <div class="lore-content souls-panel">
+                        <span class="lore-date">January 2020 - January 2023</span>
+                        <h3>Assistant Chef / Kitchen Hand</h3>
+                        <p class="lore-place">Prego Restaurant, Auckland</p>
+                        <p>Promoted to Assistant Chef after demonstrating reliability, teamwork, and skill growth. Supported head chef in food preparation, equipment maintenance, and quality control.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Summon -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">Summon Sign</span>
+            </h2>
+            <p class="summon-intro">Want to collaborate? Choose a summon sign and let's connect.</p>
+            <div class="summon-links">
+                <a href="https://github.com/Andrew3605" target="_blank" rel="noopener noreferrer" class="summon-card">
+                    <div class="summon-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </div>
+                    <div class="summon-info">
+                        <span class="summon-label">GitHub</span>
+                        <span class="summon-value">Andrew3605</span>
+                    </div>
+                    <span class="summon-arrow">&#10148;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-souls">
+            <p class="footer-text">&copy; 2026 Andrew Putrannesda</p>
+            <p class="footer-quote">"Don't you dare go Hollow."</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
